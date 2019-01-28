@@ -1,0 +1,69 @@
+2019-01-24 10:33:22.466  INFO 6752 --- [main] c.e.demo.SpringSecurityDemoApplication   : Starting SpringSecurityDemoApplication on 20180830-PC with PID 6752 (F:\IdeaProjects\spring-security-demo\target\classes started by Administrator in F:\IdeaProjects\spring-security-demo)
+2019-01-24 10:33:22.474  INFO 6752 --- [main] c.e.demo.SpringSecurityDemoApplication   : No active profile set, falling back to default profiles: default
+2019-01-24 10:33:23.983  INFO 6752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-01-24 10:33:24.003  INFO 6752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-24 10:33:24.003  INFO 6752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-01-24 10:33:24.009  INFO 6752 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.6.0_45\bin;D:\Program Files\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;%MYSLQ_HOME%\bin;D:\Program Files\jboss-5.0.1.GA\bin;D:\Program Files\apache-ant-1.8.2\bin;;.]
+2019-01-24 10:33:24.099  INFO 6752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-24 10:33:24.100  INFO 6752 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1595 ms
+2019-01-24 10:33:24.154  WARN 6752 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-01-24 10:33:24.156  INFO 6752 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-01-24 10:33:24.173  INFO 6752 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-24 10:33:24.263 ERROR 6752 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authenticationManager in com.example.demo.controller.LoginController required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2019-01-24 10:39:10.939  INFO 2172 --- [main] c.e.demo.SpringSecurityDemoApplication   : Starting SpringSecurityDemoApplication on 20180830-PC with PID 2172 (F:\IdeaProjects\spring-security-demo\target\classes started by Administrator in F:\IdeaProjects\spring-security-demo)
+2019-01-24 10:39:10.941  INFO 2172 --- [main] c.e.demo.SpringSecurityDemoApplication   : No active profile set, falling back to default profiles: default
+2019-01-24 10:39:12.333  INFO 2172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-01-24 10:39:12.359  INFO 2172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-24 10:39:12.359  INFO 2172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-01-24 10:39:12.366  INFO 2172 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.6.0_45\bin;D:\Program Files\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;%MYSLQ_HOME%\bin;D:\Program Files\jboss-5.0.1.GA\bin;D:\Program Files\apache-ant-1.8.2\bin;;.]
+2019-01-24 10:39:12.487  INFO 2172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-24 10:39:12.487  INFO 2172 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1515 ms
+2019-01-24 10:39:13.013  INFO 2172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/*.js'], []
+2019-01-24 10:39:13.013  INFO 2172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/*.css'], []
+2019-01-24 10:39:13.108  INFO 2172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31f295b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a2ab862, org.springframework.security.web.header.HeaderWriterFilter@42d6c12d, org.springframework.web.filter.CorsFilter@7a687d8d, org.springframework.security.web.authentication.logout.LogoutFilter@2da99821, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@511f5b1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33188612, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e5beb8a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c82b5df, org.springframework.security.web.session.SessionManagementFilter@3b42121d, org.springframework.security.web.access.ExceptionTranslationFilter@64f9f455, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17043b04]
+2019-01-24 10:39:13.200  INFO 2172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-24 10:39:13.392  INFO 2172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-01-24 10:39:13.394  INFO 2172 --- [main] c.e.demo.SpringSecurityDemoApplication   : Started SpringSecurityDemoApplication in 2.758 seconds (JVM running for 3.064)
+2019-01-24 10:39:20.897  INFO 2172 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-24 10:39:20.898  INFO 2172 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-24 10:39:20.904  INFO 2172 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-01-24 10:39:20.927  INFO 2172 --- [http-nio-8888-exec-2] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:40:18.581  INFO 2172 --- [http-nio-8888-exec-3] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:40:22.909  INFO 2172 --- [http-nio-8888-exec-4] c.e.demo.service.MyUserDetailsService    : ------------------------------MyUserDetailsService start---------------------------
+2019-01-24 10:40:22.945  INFO 2172 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-01-24 10:40:22.946  WARN 2172 --- [http-nio-8888-exec-4] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-01-24 10:40:23.032  INFO 2172 --- [http-nio-8888-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-01-24 10:44:11.512  INFO 2172 --- [http-nio-8888-exec-8] c.e.demo.service.MyUserDetailsService    : ------------------------------MyUserDetailsService start---------------------------
+2019-01-24 10:46:53.057  INFO 2172 --- [http-nio-8888-exec-10] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:46:59.728  INFO 2172 --- [http-nio-8888-exec-1] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:47:23.599  INFO 2172 --- [http-nio-8888-exec-2] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:47:25.449  INFO 2172 --- [http-nio-8888-exec-3] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:47:31.982  INFO 2172 --- [http-nio-8888-exec-4] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:47:32.897  INFO 2172 --- [http-nio-8888-exec-5] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:47:33.187  INFO 2172 --- [http-nio-8888-exec-6] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:47:33.397  INFO 2172 --- [http-nio-8888-exec-7] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:48:20.144  INFO 2172 --- [http-nio-8888-exec-9] c.e.demo.service.MyUserDetailsService    : ------------------------------MyUserDetailsService start---------------------------
+2019-01-24 10:48:32.935  INFO 2172 --- [http-nio-8888-exec-10] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:48:45.216  INFO 2172 --- [http-nio-8888-exec-1] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------
+2019-01-24 10:50:13.175  INFO 2172 --- [http-nio-8888-exec-4] c.e.demo.service.MyUserDetailsService    : ------------------------------MyUserDetailsService start---------------------------
+2019-01-24 11:23:55.000  WARN 2172 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s999ms493µs715ns).
+2019-01-24 11:24:06.570  INFO 2172 --- [http-nio-8888-exec-8] c.e.d.s.MyAuthenticationEntryPoint       : ------------------------------AuthenticationEntryPoint start---------------------------

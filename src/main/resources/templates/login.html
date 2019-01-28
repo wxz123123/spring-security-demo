@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<form  th:action="@{/doLogin}" method="post">
+    <div>
+        <span id="basic-addon1">@</span>
+        <input  id="user_name" name="username" type="text" placeholder="用户名" aria-describedby="basic-addon1" />
+
+    </div>
+    <br />
+    <div>
+        <span id="basic-addon2">@</span>
+        <input id="password" name="password" type="password" placeholder="密码" aria-describedby="basic-addon2" />
+    </div>
+    <br />
+    <button type="submit">登 录</button>
+
+</form>
+</body>
+
+</html>
